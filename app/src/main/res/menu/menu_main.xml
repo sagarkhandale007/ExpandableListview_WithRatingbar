@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.example.ratingbarapplication.MainActivity">
+
+
+
+
+    <item
+        android:id="@+id/action_SortBy"
+        android:orderInCategory="100"
+        android:title="@string/SortBy" />
+    <item
+        android:id="@+id/action_Date"
+        android:orderInCategory="100"
+        android:title="@string/Date" />
+    <item
+        android:id="@+id/action_Quantity"
+        android:orderInCategory="100"
+        android:title="@string/Quantity" />
+    <item
+        android:id="@+id/action_Populate"
+        android:orderInCategory="100"
+        android:title="@string/Populate"/>
+</menu>

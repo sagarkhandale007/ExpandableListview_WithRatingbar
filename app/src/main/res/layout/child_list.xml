@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image_sub_view"
+                android:layout_width="wrap_content"
+                android:src="@drawable/apple"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/Mobile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="fsf"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/Quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/ripcolor"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp" />
+
+                <RatingBar
+                    android:id="@+id/rating_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+
+                    android:isIndicator="true"
+                    android:rating="5"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:backgroundTint="@color/ripcolor"
+                    android:saveEnabled="true"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:transformPivotX="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:transformPivotY="0dp"
+                    tools:targetApi="lollipop"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:layout_gravity="right"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="02-02-2020"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
